@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontAwesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <style>
+    
+    </style>
+  </head>
+
+  <body>
+    
+    <button id="mic">
+      <img src="images/Mic.png" alt="mic" class="microphone" />
+    </button>
+    <textarea id="output" rows="1" cols="52" readonly></textarea>
+
+    <div class="main-container">
+      <div class="bubbles">
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 22"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 26"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 24"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 23"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+      </div>
+    </div>
+    <div class="logo">
+      <img class="image" src="images/logo.png" alt="AI Calculator logo " />
+      <img class="image symbol" src="images/plus.png" alt="" />
+      <img class="image symbol" src="images/simplify.png" alt="" />
+      <img class="image symbol" src="images/minus.png" alt="" />
+      <img class="image symbol" src="images/Calculate.png" alt="" />
+      <img class="image symbol" src="images/divide.png" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="input-row">
+        <input type="text" name="" id="input" class="input" value="0" readonly />
+      </div>
+      <div class="row">
+        <button class="button" onclick="input('/')">/</button>
+        <button class="button" onclick="input('*')">*</button>
+        <button class="button" onclick="sin()"> sin </button>
+        <button class="button" onclick="cos()"> cos </button>
+
+        <button class="button clr" onclick="allclear()" onkeypress="">AC </button>
+        <button class="button del" onclick="Del()">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button class="button" onclick="input('7')">7</button>
+        <button class="button" onclick="input('8')">8</button>
+        <button class="button" onclick="input('9')">9</button>
+        <button class="button" onclick="input('-')">-</button>
+        <button class="button" onclick="tan()"> tan </button>
+        <button class="button" onclick="root()"> √ </button>
+
+        <button class="button" onclick="input('4')">4</button> 
+        <button class="button" onclick="input('5')">5</button>
+        <button class="button" onclick="input('6')">6</button>
+        <button class="button" onclick="input('+')">+</button>
+        <button class="button" onclick="square()"> x<sup>2</sup></button>
+        <button class="button" onclick="log('Log')">log</sub> </button>
+
+<button class="button" onclick="input('1')">1</button>
+        <button class="button" onclick="input('2')">2</button>
+        <button class="button" onclick="input('3')">3</button>
+        
+        <button class="button zero" onclick="input('0')">0</button>
+        <button class="button dblzero" onclick="input('00')">00</button>
+        <button class="button" onclick="input('.')">.</button>
+        <button class="button equal" onclick="equal()">=</button>
+      </div>
+    </div>
+
+    <footer>
+      Presented By <span class="linear-wipe">Vinay kumar & Piyush Saini.</span>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="javascript.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+</html>
