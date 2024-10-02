@@ -6,10 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
     transition: all .2s;
     box-sizing: border-box;
-    user-select: none; 
+    user-select: none;
     font-family: 'Montserrat', sans-serif;
 }
- 
+
 body {
     background: #232a2f;
     width: 100%;
@@ -227,7 +227,7 @@ footer span {
     box-shadow: 0 0 0 10px #4fc3dc,
     0 0 50px #4fc3dc,
     0 0 100px #4fc3dc;
-    animation: animate 215s linear infinite ; 
+    animation: animate 215s linear infinite ;
     animation-duration:calc(500s / var(--i)) ;
 }
 .bubbles span:nth-child(even){
@@ -274,7 +274,7 @@ footer span {
     border: none;
     position: absolute;
     top: 200px;
-    right: 450px;
+    right: 370px;
     background: transparent;
   }
   button#mic img {
@@ -299,7 +299,7 @@ footer span {
   textarea {
     position: relative;
     top: 45px;
-    
+
     resize: none;
     background: transparent;
     text-align: left;
