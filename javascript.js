@@ -1,25 +1,21 @@
 let screen = document.getElementById("input");
-let equalBtn = document.querySelector(".equal")
+let equalBtn = document.querySelector(".equal");
 
 function input(x) {
-    if(screen.value == "0"){
-      screen.value=""
-      screen.value = screen.value + x;
-    } 
-    else{
-      screen.value = screen.value + x;
-
-    }
-} 
-
-
+  if (screen.value == "0") {
+    screen.value = "";
+    screen.value = screen.value + x;
+  } else {
+    screen.value = screen.value + x;
+  }
+}
 
 function Del() {
-  if(screen.value== "0"){
-    return
-  }else if(screen.value == ""){
-    screen.value = "0"
-  }else{
+  if (screen.value == "0") {
+    return;
+  } else if (screen.value == "") {
+    screen.value = "0";
+  } else {
     screen.value = screen.value.slice(0, -1);
   }
 }
@@ -32,9 +28,7 @@ function equal() {
   }
 }
 
-
 // Buttons JavaScript
-
 
 $(document).ready(function() {
   $(".button").mousedown(function() {
@@ -46,7 +40,7 @@ $(document).ready(function() {
   $(".button").mouseup(function() {
     $(this).css({
       "box-shadow": " inset 0 3px 2px rgba(255, 255, 255, 0.25)",
-      background: "rgb(36, 55, 69)",
+      background: "rgb(36, 55, 69)"
     });
   });
   $(".clr").mousedown(function() {
@@ -70,143 +64,119 @@ $(document).ready(function() {
 });
 
 document.onkeydown = e => {
-  if(e.key == "0" || e.key == "Num0"){
-    if(screen.value == "0"){
+  if (e.key == "0" || e.key == "Num0") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 0;
-    }else{
+    } else {
       screen.value = screen.value + 0;
-
     }
-  }else if(e.key == "1" || e.key == "Num1"){
-    if(screen.value == "0"){
+  } else if (e.key == "1" || e.key == "Num1") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 1;
-    }else{
+    } else {
       screen.value = screen.value + 1;
-
     }
-  }else if(e.key == "2" || e.key == "Num2"){
-    if(screen.value == "0"){
+  } else if (e.key == "2" || e.key == "Num2") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 2;
-    }else{
+    } else {
       screen.value = screen.value + 2;
-
     }
-  }else if(e.key == "3" || e.key == "Num3"){
-    if(screen.value == "0"){
+  } else if (e.key == "3" || e.key == "Num3") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 3;
-    }else{
+    } else {
       screen.value = screen.value + 3;
-
     }
-  }else if(e.key == "4" || e.key == "Num4"){
-    if(screen.value == "0"){
+  } else if (e.key == "4" || e.key == "Num4") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 4;
-    }else{
+    } else {
       screen.value = screen.value + 4;
-
     }
-  }else if(e.key == "5" || e.key == "Num5"){
-    if(screen.value == "0"){
+  } else if (e.key == "5" || e.key == "Num5") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 5;
-    }else{
+    } else {
       screen.value = screen.value + 5;
-
     }
-  }else if(e.key == "6" || e.key == "Num6"){
-    if(screen.value == "0"){
+  } else if (e.key == "6" || e.key == "Num6") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 6;
-    }else{
+    } else {
       screen.value = screen.value + 6;
-
     }
-  }else if(e.key == "7" || e.key == "Num7"){
-    if(screen.value == "0"){
+  } else if (e.key == "7" || e.key == "Num7") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 7;
-    }else{
+    } else {
       screen.value = screen.value + 7;
-
     }
-  }else if(e.key == "8" || e.key == "Num8"){
-    if(screen.value == "0"){
+  } else if (e.key == "8" || e.key == "Num8") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 8;
-    }else{
+    } else {
       screen.value = screen.value + 8;
-
     }
-  }else if(e.key == "9" || e.key == "Num9"){
-    if(screen.value == "0"){
+  } else if (e.key == "9" || e.key == "Num9") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + 9;
-    }else{
+    } else {
       screen.value = screen.value + 9;
-
     }
-  }else if(e.key == "+" || e.key == "Num+"){
-    if(screen.value == "0"){
+  } else if (e.key == "+" || e.key == "Num+") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + "+";
-    }else{
+    } else {
       screen.value = screen.value + "+";
-
     }
-  }else if(e.key == "-" || e.key == "Num-"){
-    if(screen.value == "0"){
+  } else if (e.key == "-" || e.key == "Num-") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + "-";
-    }else{
+    } else {
       screen.value = screen.value + "-";
-
     }
-  }else if(e.key == "*" || e.key == "Num*"){
-    if(screen.value == "0"){
+  } else if (e.key == "*" || e.key == "Num*") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + "*";
-    }else{
+    } else {
       screen.value = screen.value + "*";
-
     }
-  }else if(e.key == "/" || e.key == "Num/"){
-    if(screen.value == "0"){
+  } else if (e.key == "/" || e.key == "Num/") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + "/";
-    }else{
+    } else {
       screen.value = screen.value + "/";
-
     }
-  }else if(e.key == "." || e.key == "Num."){
-    if(screen.value == "0"){
+  } else if (e.key == "." || e.key == "Num.") {
+    if (screen.value == "0") {
       screen.value = "";
       screen.value = screen.value + ".";
-    }else{
+    } else {
       screen.value = screen.value + ".";
-
     }
-  }else if(e.key == "Enter" || e.key == "Numenter"){
+  } else if (e.key == "Enter" || e.key == "Numenter") {
     equal();
-  }else if(e.key == "Delete" ){
+  } else if (e.key == "Delete") {
     allclear();
-  }else if(e.key == "Backspace"){
+  } else if (e.key == "Backspace") {
     Del();
   }
-}
-
-let sin = () => screen.value = Math.sin(screen.value * Math.PI / 180)
-let cos = () => screen.value = Math.cos(screen.value * Math.PI / 180)
-let tan = () => screen.value = Math.tan(screen.value * Math.PI / 180)
-let root = () => screen.value = Math.sqrt(screen.value, 2 )
-let square = () => screen.value = Math.pow(screen.value, 2 )
-let log = () => screen.value = Math.log(screen.value)
-
-
+};
 
 const micBtn = document.getElementById("mic");
 const outputTextarea = document.getElementById("output");
@@ -220,23 +190,21 @@ function startVoiceInput() {
     return;
   }
 
-  recognition = new (
-    window.SpeechRecognition ||
+  recognition = new (window.SpeechRecognition ||
     window.webkitSpeechRecognition ||
     window.mozSpeechRecognition ||
-    window.msSpeechRecognition
-  )();
+    window.msSpeechRecognition)();
 
   recognition.lang = "en-US";
   recognition.start();
 
-  recognition.onresult = function (event) {
+  recognition.onresult = function(event) {
     const voiceInput = event.results[0][0].transcript.trim();
     outputTextarea.value = voiceInput;
     performCalculation(voiceInput);
   };
 
-  recognition.onend = function () {
+  recognition.onend = function() {
     recognition.stop();
   };
 }
@@ -272,19 +240,17 @@ function speak(message) {
 
 equalBtn.addEventListener("click", calculate);
 
+let mic = document.querySelector(".microphone");
+let textarea = document.getElementById("output");
 
-let mic = document.querySelector(".microphone")
-let textarea = document.getElementById("output")
-
-mic.addEventListener("click", function(){
+mic.addEventListener("click", function() {
   mic.classList.add("record");
   setTimeout(() => {
     mic.classList.remove("record");
   }, 7000);
-})
+});
 
 function allclear() {
   screen.value = "0";
   textarea.value = "";
-
 }
