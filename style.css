@@ -132,7 +132,6 @@ input {
 }
 
 .row {
-    /* border: 2px solid yellow; */
     display: grid;
     height: 40px;
     grid-template-columns: repeat(4, 55px);
@@ -165,7 +164,6 @@ input {
 .clr:hover {
     background: rgb(255, 77, 0);
     color: #fff;
-
 }
 
 .equal {
@@ -316,7 +314,6 @@ button#mic img {
 textarea {
     position: relative;
     top: 45px;
-
     resize: none;
     background: transparent;
     text-align: left;
